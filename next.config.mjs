@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_KEY: "AIzaSyD3FgRGeXfJQmkIog9ZVC5LRIJVgq4UjW0",
+    API_KEY: process.env.YOUTUBE_API_KEY,
   },
   images: {
     domains: ["i.ytimg.com"],
