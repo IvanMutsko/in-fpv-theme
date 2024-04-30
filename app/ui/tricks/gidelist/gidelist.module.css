@@ -1,0 +1,63 @@
+.gide {
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 34px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.videoWrap {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 250px;
+}
+
+.video {
+  min-width: 100%;
+  border: none;
+}
+
+.description {
+  max-width: 400px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttonWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 34px;
+
+  background-color: transparent;
+
+  transition: all 300ms ease-in;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}

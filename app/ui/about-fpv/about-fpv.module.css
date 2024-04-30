@@ -1,0 +1,27 @@
+.about {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subwrap {
+  display: flex;
+  gap: 30px;
+}
+
+.image {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.cardImage {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+.item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}

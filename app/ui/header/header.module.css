@@ -1,0 +1,22 @@
+.header {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 10px 40px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

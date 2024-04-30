@@ -1,0 +1,35 @@
+.levels {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+.card {
+  min-width: 190px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: scale 300ms ease-in;
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
+}
+
+.cardImage {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}

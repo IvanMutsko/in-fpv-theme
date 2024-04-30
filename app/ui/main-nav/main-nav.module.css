@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+}
+
+.navLink {
+  display: inline-block;
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  transition: background-color 300ms ease-in;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
