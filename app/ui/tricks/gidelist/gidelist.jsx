@@ -13,7 +13,7 @@ export default function GideList({ title, playlistID }) {
   const [nextPageToken, setNextPageToken] = useState(null);
   const [prevPageToken, setPrevPageToken] = useState(null);
 
-  const getVideos = async (token) => {
+  const getVideos = async (token = "") => {
     try {
       setError(false);
       setIsLoading(true);
@@ -33,15 +33,6 @@ export default function GideList({ title, playlistID }) {
   useEffect(() => {
     getVideos();
   }, []);
-
-  const handleClick = (type) => {
-    if ((type = "next")) {
-      getVideos(nextPageToken);
-    }
-    if ((type = "prev")) {
-      getVideos(prevPageToken);
-    }
-  };
 
   return (
     <section className={`content-wrap ${styles.gide}`}>
@@ -80,7 +71,7 @@ export default function GideList({ title, playlistID }) {
           <button
             className={styles.button}
             type="button"
-            onClick={() => handleClick("prev")}
+            onClick={() => getVideos(prevPageToken)}
             disabled={!prevPageToken}
           >
             <GrPrevious />
@@ -91,7 +82,7 @@ export default function GideList({ title, playlistID }) {
           <button
             className={styles.button}
             type="button"
-            onClick={() => handleClick("next")}
+            onClick={() => getVideos(nextPageToken)}
             disabled={!nextPageToken}
           >
             <GrNext />
